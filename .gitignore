@@ -1,0 +1,60 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Uploaded satellite datasets
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Model checkpoints and trained weights
+models/checkpoints/*
+!models/checkpoints/.gitkeep
+
+models/trained/*
+!models/trained/.gitkeep
+
+# Generated uploads and results
+static/uploads/*
+!static/uploads/.gitkeep
+
+static/results/*
+!static/results/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
