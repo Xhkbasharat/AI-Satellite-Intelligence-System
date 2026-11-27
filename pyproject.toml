@@ -1,0 +1,28 @@
+
+[project]
+name = "ai-satellite-intelligence-system"
+version = "1.0.0"
+description = "AI-powered satellite image segmentation, change detection, and geospatial analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Sheikh Basharat Akbar" }
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
+
+[tool.coverage.run]
+source = ["src", "training"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
